@@ -51,7 +51,6 @@ export class BookListComponent implements OnInit {
   }
   @HostListener("document:scroll")
   onScroll(event: any): void {
-    debugger
     if (this.search.PageNumber != this.books.PageNumber) {
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
         if (!this.isLoading) {

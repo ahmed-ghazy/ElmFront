@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+
+  
+  body {
+    font-family: "Lyon" !important;
+    color: #666;
+    background: #fbfbfb;
+  }
+  main .license {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  main .license li {
+    list-style: none;
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+  
+  main .license li .license-container {
+    position: relative;
+    color: #666;
+    border: 1px solid #ededed;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.45rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  main .license li .license-container > a:hover {
+    color: #666;
+  }
+  
+  main .license li .license-container:hover {
+    -webkit-box-shadow: 0 0 30px rgba(62, 51, 86, 0.4);
+    box-shadow: 0 0 30px rgba(62, 51, 86, 0.4);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  main .license li .license-container .license-header {
+    padding: 15px 20px 20px;
+    border-bottom: 1px solid #ededed;
+  }
+  
+  main .license li .license-container .license-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 70px;
+    padding: 20px;
+  }
+  
+  main .license li .license-container .license-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px;
+    height: 257px;
+  }
+  
+  main .license li .license-container .license-info img {
+    max-width: 70px;
+  }
+  
+  main .license li .license-container .license-footer {
+    padding: 15px 20px 20px;
+    border-top: 1px solid #ededed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  main .license li .license-container .license-footer span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  
+  main .license li .license-container .license-footer span.btn {
+    color: #fff;
+  }
+

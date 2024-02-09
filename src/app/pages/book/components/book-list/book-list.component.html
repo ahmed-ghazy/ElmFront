@@ -1,21 +1,37 @@
 <div class="row m-0 mb-5">
     <div class="col-md-3 mt-3">
-        <input class="form-control mr-sm-2" type="search" [(ngModel)]="search.Keyword" placeholder="Search"
+        <input class="form-control mr-sm-2" type="text" [(ngModel)]="search.Keyword" placeholder="Search"
             aria-label="Search" (keyup)="onSearch()">
     </div>
 </div>
-<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 ">
+<div class="form-body row">
+    <ul class="d-flex license">
+        <li class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12" *ngFor="let book of books.Items">
+            <div class="license-container">
+                    <div class="license-info">
+                        <div>
 
-    <div class="col-md-4 mb-4 mt-3" *ngFor="let book of books.Items">
-        <div class="card h-150">
-            <img [src]="book.CoverBase64" class="card-img-top" alt="Book Image">
-            <div class="card-body">
-                <h5 class="card-title">{{ book.BookTitle }}</h5>
-                <p class="card-text">{{ book.Author }}</p>
-                <p class="card-text">{{ book.BookDescription }}</p>
-                <p class="card-text">{{ book.PublishDate }}</p>
+                            <p>
+                                <span class="fw-bold m-1"> BookTitle :</span>
+                                <span>{{book.BookTitle}}</span>
+                            </p>
+                            <p>
+                                <span class="fw-bold m-1">Author :</span>
+                                <span>{{book.Author}}</span>
+                            </p>
+                            <p>
+                                <span class="fw-bold m-1">PublishDate:</span>
+                                <span>{{book.PublishDate}}</span>
+                            </p>
+                            <p>
+                                <span class="fw-bold m-1">BookDescription:</span>
+                                <span>{{book.BookDescription}}</span>
+                            </p>
 
+                        </div>
+                        <div><img [src]="book.CoverBase64" alt=""></div>
+                    </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 </div>
