@@ -5,7 +5,7 @@ import { PagesComponent } from './pages.component';
 const routes: Routes = [
  { path: '',
   component: PagesComponent,
-  children:[
+  children:[    
     {
       path: 'book',
       loadChildren: () =>
