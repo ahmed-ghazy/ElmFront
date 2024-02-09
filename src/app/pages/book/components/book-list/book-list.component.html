@@ -1,0 +1,21 @@
+<div class="row m-0 mb-5">
+    <div class="col-md-3 mt-3">
+        <input class="form-control mr-sm-2" type="search" [(ngModel)]="search.Keyword" placeholder="Search"
+            aria-label="Search" (keyup)="onSearch()">
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 ">
+
+    <div class="col-md-4 mb-4 mt-3" *ngFor="let book of books.Items">
+        <div class="card h-150">
+            <img [src]="book.CoverBase64" class="card-img-top" alt="Book Image">
+            <div class="card-body">
+                <h5 class="card-title">{{ book.BookTitle }}</h5>
+                <p class="card-text">{{ book.Author }}</p>
+                <p class="card-text">{{ book.BookDescription }}</p>
+                <p class="card-text">{{ book.PublishDate }}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
