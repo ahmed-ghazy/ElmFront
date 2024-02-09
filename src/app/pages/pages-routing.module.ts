@@ -12,7 +12,7 @@ const routes: Routes = [
         import('../pages/book/book.module').then((m) => m.BookModule)
     },
   ]}
-];
+]; 
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
